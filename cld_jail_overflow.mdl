@@ -1,0 +1,206 @@
+{UTF-8}
+Average sentence  = A FUNCTION OF( Justice Punitiveness)
+	~	
+	~		|
+
+Bail grant rate  = A FUNCTION OF( Priority cases,Prison Population)
+	~	
+	~		|
+
+No of jails  = A FUNCTION OF( Prison building rate)
+	~	
+	~		|
+
+Prison building rate  = A FUNCTION OF( Prison Capacity,Prison capacity utilization)
+	~	
+	~		|
+
+Under trial  = A FUNCTION OF( Crime Rate,no of judges,Priority cases)
+	~	
+	~		|
+
+Prison capacity utilization  = A FUNCTION OF( No of jails,Prison Capacity,Prison Population\
+		)
+	~	
+	~		|
+
+no of judges  = A FUNCTION OF( )
+	~	
+	~		|
+
+Rehabilitation  = A FUNCTION OF( Prison capacity utilization)
+	~	
+	~		|
+
+Prison Population  = A FUNCTION OF( Average sentence,Bail grant rate,Under trial)
+	~	
+	~		|
+
+Priority cases  = A FUNCTION OF( powerinfluence,political influence)
+	~	
+	~		|
+
+powerinfluence  = A FUNCTION OF( )
+	~	
+	~		|
+
+Crime Rate  = A FUNCTION OF( Impunity)
+	~	
+	~		|
+
+Demand for Punitiveness  = A FUNCTION OF( perception of punitiveness,Reoffenders)
+	~	
+	~		|
+
+Impunity  = A FUNCTION OF( Justice Punitiveness,perception of punitiveness,political influence\
+		)
+	~	
+	~		|
+
+Justice Punitiveness  = A FUNCTION OF( Demand for Punitiveness)
+	~	
+	~		|
+
+Reoffenders  = A FUNCTION OF( Rehabilitation)
+	~	
+	~		|
+
+perception of punitiveness  = A FUNCTION OF( Crime Rate)
+	~	
+	~		|
+
+political influence  = A FUNCTION OF( )
+	~	
+	~		|
+
+Capacity Depreciation  = A FUNCTION OF( )
+	~	
+	~		|
+
+Prison Capacity  = A FUNCTION OF( Capacity Depreciation,Prison building rate)
+	~	
+	~		|
+
+********************************************************
+	.Control
+********************************************************~
+		Simulation Control Parameters
+	|
+
+FINAL TIME  = 100
+	~	Month
+	~	The final time for the simulation.
+	|
+
+INITIAL TIME  = 0
+	~	Month
+	~	The initial time for the simulation.
+	|
+
+SAVEPER  = 
+        TIME STEP
+	~	Month [0,?]
+	~	The frequency with which output is stored.
+	|
+
+TIME STEP  = 1
+	~	Month [0,?]
+	~	The time step for the simulation.
+	|
+
+\\\---/// Sketch information - do not modify anything except names
+V300  Do not put anything below this section - it will be ignored
+*View 1
+$-1--1--1,0,|12||-1--1--1|-1--1--1|-1--1--1|-1--1--1|-1--1--1|96,96,100,0
+10,1,Reoffenders,1219,-237,48,23,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,2,No of jails,1559,-64,48,23,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,3,no of judges,118,27,52,23,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,4,Prison capacity utilization,1003,73,64,23,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,5,Prison Capacity,952,299,64,23,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,6,Prison Population,798,149,44,23,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,7,6,4,1,0,43,0,0,192,0,-1--1--1,,1|(899,137)|
+1,8,5,4,0,0,45,0,0,192,0,-1--1--1,,1|(0,0)|
+10,9,Prison building rate,1443,114,64,23,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,10,9,5,1,0,45,0,0,192,0,-1--1--1,,1|(1202,172)|
+1,11,5,9,1,0,43,0,0,192,0,-1--1--1,,1|(1378,331)|
+10,12,Capacity Depreciation,870,400,52,23,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,13,12,5,0,0,45,0,0,192,0,-1--1--1,,1|(0,0)|
+10,14,Average sentence,851,-58,43,23,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,15,14,6,0,0,43,0,0,192,0,-1--1--1,,1|(0,0)|
+10,16,Crime Rate,311,-204,44,23,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,17,Impunity,684,-273,43,23,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,18,Justice Punitiveness,909,-183,52,23,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,19,18,14,1,0,43,0,0,192,0,-1--1--1,,1|(869,-113)|
+10,20,Demand for Punitiveness,1261,-378,52,23,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,21,20,18,1,0,43,0,0,192,0,-1--1--1,,1|(1100,-302)|
+1,22,18,17,1,0,45,0,0,192,0,-1--1--1,,1|(763,-190)|
+10,23,perception of punitiveness,966,-389,56,23,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,24,16,23,1,0,45,0,0,192,0,-1--1--1,,1|(519,-366)|
+1,25,23,20,1,0,43,0,0,192,0,-1--1--1,,1|(1108,-427)|
+1,26,23,17,1,0,45,0,0,192,0,-1--1--1,,1|(783,-363)|
+1,27,17,16,1,0,43,0,0,192,0,-1--1--1,,1|(470,-139)|
+10,28,Rehabilitation,1267,-92,60,23,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,29,28,1,1,0,45,0,0,192,0,-1--1--1,,1|(1283,-164)|
+1,30,4,28,1,0,45,0,0,192,0,-1--1--1,,1|(1149,1)|
+10,31,Under trial,591,69,48,23,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,32,31,6,1,0,43,0,0,192,0,-1--1--1,,1|(693,68)|
+10,33,Priority cases,161,192,60,23,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,34,political influence,170,338,43,23,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,35,powerinfluence,379,341,60,23,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,36,34,33,1,0,43,0,0,192,0,-1--1--1,,1|(150,282)|
+1,37,35,33,1,0,43,0,0,192,0,-1--1--1,,1|(292,304)|
+1,38,34,17,1,0,45,0,0,192,0,-1--1--1,,1|(-23,-181)|
+1,39,33,31,1,0,43,0,0,192,0,-1--1--1,,1|(392,159)|
+1,40,1,20,1,0,43,0,0,192,0,-1--1--1,,1|(1269,-306)|
+10,41,Bail grant rate,666,327,64,23,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,42,41,6,1,0,45,0,0,192,0,-1--1--1,,1|(774,258)|
+1,43,16,31,1,0,43,0,0,192,0,-1--1--1,,1|(397,-66)|
+1,44,2,4,1,0,45,0,0,192,0,-1--1--1,,1|(1291,28)|
+1,45,3,31,1,0,45,0,0,192,0,-1--1--1,,1|(330,63)|
+1,46,6,41,1,0,43,0,0,192,0,-1--1--1,,1|(689,241)|
+1,47,9,2,1,0,43,0,0,192,0,-1--1--1,,1|(1625,45)|
+1,48,4,9,1,0,43,0,0,192,0,-1--1--1,,1|(1185,102)|
+1,49,33,41,1,0,43,0,0,192,0,-1--1--1,,1|(399,290)|
+12,50,0,480,-220,63,63,4,7,0,0,-1,0,0,0,0,0,0,0,0,0
+B1 crime rate loop
+12,51,0,740,232,9,9,4,7,0,0,-1,0,0,0,0,0,0,0,0,0
+B4 Bail-populatio loop
+12,52,0,1026,-70,28,28,5,7,0,0,-1,0,0,0,0,0,0,0,0,0
+R1 correction loop
+12,53,0,530,-28,37,37,5,7,0,0,-1,0,0,0,0,0,0,0,0,0
+B5 Crime-justice loop
+12,54,0,1195,243,43,43,5,7,0,0,-1,0,0,0,0,0,0,0,0,0
+B2 Prison building loop
+12,55,0,1493,43,37,37,5,7,0,0,-1,0,0,0,0,0,0,0,0,0
+B3 Prison Capacity loop
+///---\\\
+:L<%^E!@
+5:Crime Rate
+19:100,0
+24:0
+25:0
+26:0
+23:0
+15:0,0,0,0,0,0
+27:0,
+34:0,
+42:0
+72:0
+73:0
+95:0
+96:0
+97:0
+77:0
+78:0
+102:1
+93:0
+94:0
+92:0
+91:0
+90:0
+87:0
+75:
+43:
+103:8,8,8,3,8
+105:0,0,0,0,0,0,0,0,0,0
+104:Courier|12||0-0-0|0-0-0|-1--1--1|0-0-255|192-192-192|-1--1--1
